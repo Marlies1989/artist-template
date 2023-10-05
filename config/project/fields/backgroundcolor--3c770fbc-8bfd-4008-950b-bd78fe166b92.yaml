@@ -1,0 +1,35 @@
+columnSuffix: qayqkcgg
+contentColumnType: string(16)
+fieldGroup: 5aaf74f2-2e29-43ef-9b34-619d2bfebd43 # Common
+handle: backgroundcolor
+instructions: null
+name: backgroundColor
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'light background'
+        -
+          - value
+          - light-background
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'dark background'
+        -
+          - value
+          - dark-background
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

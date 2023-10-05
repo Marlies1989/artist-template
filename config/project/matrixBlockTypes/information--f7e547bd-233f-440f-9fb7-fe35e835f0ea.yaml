@@ -1,0 +1,46 @@
+field: 8b66fb95-101a-4b01-a23c-5a8a8e8d5b8b # websiteTitle
+fieldLayouts:
+  20d57f34-ee38-4781-9860-4fbc09d5bf45:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 684fd5f1-9346-4da6-a829-43209547a845 # more information
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d428f0c0-f6e2-49df-8336-919e0d2af86e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b39d3a81-15d7-42df-a042-a7b5045ca678
+        userCondition: null
+fields:
+  684fd5f1-9346-4da6-a829-43209547a845: # more information
+    columnSuffix: ycevfbpa
+    contentColumnType: text
+    fieldGroup: null
+    handle: moreInformation
+    instructions: null
+    name: 'more information'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: information
+name: information
+sortOrder: 2

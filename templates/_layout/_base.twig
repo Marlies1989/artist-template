@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ craft.app.language }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% if entry is defined and entry.title is not empty %}{{ entry.title }} | {% endif %} {{ systemName }}</title>
+         {% css "assets/css/app.css" %}
+    </head>
+
+    <body>
+          <header>
+              {% include '_layout/_header.twig'%}
+          </header>
+
+              {% block main %}
+              {% endblock %}
+
+
+          <footer>
+              {% include '_layout/_footer.twig'%}
+          </footer>
+
+        {% js "/assets/js/script.js" %}
+    </body>
+
+</html>

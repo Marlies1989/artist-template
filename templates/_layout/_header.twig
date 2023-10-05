@@ -1,0 +1,15 @@
+<nav>
+    <div class="mobile-open" id="mobileMenuButton">
+        <p>Menu</p>
+    </div>
+    <div class="menu-wrapper" id="mobileMenu">
+     <ul class="menu">
+      {% set entries = craft.entries().section('menu').all() %}
+        {% nav entry in entries %}
+            <li>
+                <a href="#{{ entry.title }}">{{ entry.title }}</a>
+            </li>
+        {% endnav %}
+        </ul>
+    </div>
+</nav>

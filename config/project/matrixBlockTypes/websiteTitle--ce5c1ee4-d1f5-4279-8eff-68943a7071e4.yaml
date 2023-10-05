@@ -1,0 +1,46 @@
+field: 8b66fb95-101a-4b01-a23c-5a8a8e8d5b8b # websiteTitle
+fieldLayouts:
+  2e5cf9b9-623e-44cb-bcd3-eea687445797:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3be976a5-0ea4-400d-a513-4dc25076f063 # websiteTitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 983454af-d105-4f69-ac5d-9bf95658136a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b5b762b3-5f81-4118-b757-000c4521f2f1
+        userCondition: null
+fields:
+  3be976a5-0ea4-400d-a513-4dc25076f063: # websiteTitle
+    columnSuffix: nazjghmf
+    contentColumnType: text
+    fieldGroup: null
+    handle: websitetitle
+    instructions: null
+    name: websiteTitle
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: websiteTitle
+name: 'Website Title'
+sortOrder: 1

@@ -1,0 +1,62 @@
+field: 1e2f2daf-cb1c-4f11-ab96-4d7284a77689 # subtitle
+fieldLayouts:
+  3d6ae517-5c07-4aab-8bee-cf2bdc950465:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ed16c3e9-8e4a-436b-897e-3c8333cf14c8 # color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7aa2cb1a-ffd6-459a-9a33-9f363b61119c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bc939176-e02d-4a23-ad7d-234f4686d181
+        userCondition: null
+fields:
+  ed16c3e9-8e4a-436b-897e-3c8333cf14c8: # color
+    columnSuffix: xisgjrff
+    contentColumnType: string(16)
+    fieldGroup: null
+    handle: color
+    instructions: null
+    name: color
+    searchable: false
+    settings:
+      columnType: null
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Light background'
+            -
+              - value
+              - light-background
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - 'Dark background'
+            -
+              - value
+              - dark-background
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+handle: color
+name: color
+sortOrder: 2

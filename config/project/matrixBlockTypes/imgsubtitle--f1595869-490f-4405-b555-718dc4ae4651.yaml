@@ -1,0 +1,46 @@
+field: 75795f43-37c1-449c-846e-09a6ce0fb307 # artblock
+fieldLayouts:
+  0bf92f8a-be3e-483f-a0fb-2d8750122d39:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: aa66f30b-c5bd-440e-8cf8-7d2df3a3eb2d # imgSubtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e1df7146-4f58-4bc6-8c73-24a0edb5150c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 063e1ecb-449e-450a-afe7-b5448fefa7e9
+        userCondition: null
+fields:
+  aa66f30b-c5bd-440e-8cf8-7d2df3a3eb2d: # imgSubtitle
+    columnSuffix: eiqmadii
+    contentColumnType: text
+    fieldGroup: null
+    handle: imgsubtitle
+    instructions: null
+    name: imgSubtitle
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: imgsubtitle
+name: imgSubtitle
+sortOrder: 3

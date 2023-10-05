@@ -1,13 +1,36 @@
-dateModified: 1696429214
+dateModified: 1696517200
 email:
   fromEmail: marlies@twokings.nl
   fromName: artisttemplate
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    1e2f2daf-cb1c-4f11-ab96-4d7284a77689: subtitle # subtitle
+    3be976a5-0ea4-400d-a513-4dc25076f063: websiteTitle # websiteTitle
+    3c770fbc-8bfd-4008-950b-bd78fe166b92: backgroundColor # backgroundColor
     5aaf74f2-2e29-43ef-9b34-619d2bfebd43: Common # Common
+    8b60daa0-1369-4bea-9598-a50ded1b9938: subtitle # subtitle
+    8b66fb95-101a-4b01-a23c-5a8a8e8d5b8b: websiteTitle # websiteTitle
     10b52a70-48ac-46b7-bb76-2cb293f44b7b: artisttemplate # artisttemplate
+    12e4733b-5fc8-492f-bac7-d248091adcd6: Homepage # Homepage
+    37a3b5c5-9fe1-4edf-ac7f-73ad6d56fa05: Contentblock # Contentblock
+    40fb6b6a-d092-4d9a-9285-27a794df1ff0: Default # Default
+    684fd5f1-9346-4da6-a829-43209547a845: 'more information' # more information
+    692cb3ef-0ce0-4aca-8574-4baee13210c1: color # color
+    759ebaa1-fe2a-49bd-bd0f-062838adc0bf: Homepage # Homepage
+    75795f43-37c1-449c-846e-09a6ce0fb307: artblock # artblock
+    77396099-85bf-4453-ba6c-9186a7bd94fc: image # image
+    a78535fc-0ae8-4529-81c5-6eee8cff91c4: image # image
+    aa66f30b-c5bd-440e-8cf8-7d2df3a3eb2d: imgSubtitle # imgSubtitle
     c7103200-09f9-42b1-9234-bda372c121e4: artisttemplate # artisttemplate
+    ce5c1ee4-d1f5-4279-8eff-68943a7071e4: 'Website Title' # Website Title
+    dfb38b33-69d1-4e77-aa7d-8677e65f9f3a: 'img title' # img title
+    ed16c3e9-8e4a-436b-897e-3c8333cf14c8: color # color
+    efd07511-1da3-483d-b51d-c9c47a789894: 'img title' # img title
+    efebddb6-b5cb-4ea8-a7c7-79dcf097e588: subtitle # subtitle
+    f7e547bd-233f-440f-9fb7-fe35e835f0ea: information # information
+    f1595869-490f-4405-b555-718dc4ae4651: imgSubtitle # imgSubtitle
+    f9671376-13f1-4179-8250-e3386d77c996: websiteinfo # websiteinfo
 system:
   edition: solo
   live: true

@@ -1,0 +1,19 @@
+columnSuffix: lwflwwyi
+contentColumnType: text
+fieldGroup: 12e4733b-5fc8-492f-bac7-d248091adcd6 # Homepage
+handle: websitetitle
+instructions: null
+name: websiteTitle
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
