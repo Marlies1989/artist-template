@@ -1,0 +1,22 @@
+dateModified: 1696429214
+email:
+  fromEmail: marlies@twokings.nl
+  fromName: artisttemplate
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    5aaf74f2-2e29-43ef-9b34-619d2bfebd43: Common # Common
+    10b52a70-48ac-46b7-bb76-2cb293f44b7b: artisttemplate # artisttemplate
+    c7103200-09f9-42b1-9234-bda372c121e4: artisttemplate # artisttemplate
+system:
+  edition: solo
+  live: true
+  name: artisttemplate
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
