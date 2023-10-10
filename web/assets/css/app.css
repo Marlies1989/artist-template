@@ -854,6 +854,7 @@
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
+    margin-block: var(--space-lg);
       & a {
         color: var(--color-secondary);
         text-decoration: underline;
