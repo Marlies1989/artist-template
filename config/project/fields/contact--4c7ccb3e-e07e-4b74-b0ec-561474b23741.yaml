@@ -1,0 +1,12 @@
+columnSuffix: gewthxas
+contentColumnType: string
+fieldGroup: 12e4733b-5fc8-492f-bac7-d248091adcd6 # Homepage
+handle: contact
+instructions: null
+name: contact
+searchable: false
+settings:
+  placeholder: 'How can people reach you'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Email

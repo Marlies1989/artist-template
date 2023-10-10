@@ -28,6 +28,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 4c7ccb3e-e07e-4b74-b0ec-561474b23741 # contact
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9c7f12b8-cd51-41cf-9513-f38f77714237
+            userCondition: null
+            warning: null
+            width: 100
         name: Homepage
         uid: 2ec9c47b-70ca-4830-b9e9-9ee0ff832a79
         userCondition: null

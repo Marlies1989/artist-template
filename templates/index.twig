@@ -12,90 +12,36 @@
             </div>
         </div>
 
-            {% set myEntryQuery = craft.entries() %}
-            {% set entries = myEntryQuery.all() %}
+            {% set contentBlocks = craft.entries() %}
+            {% set entries = contentBlocks.all() %}
             {% for entry in entries %}
           
             <div class="img-block {{ entry.backgroundcolor }}" id="{{ entry.title }}">
            
                 <h2>{{ entry.title }}</h2>
                  <p>{{ entry.subtitle }}</p>
-        
-                {% endfor %}
              
                     <div class="images">
-                        <figure>
-                            <img src="assets/images/Surf.jpeg" alt="Surf Algarve">
-                            <figcaption class="overlay">
-                                <div class="text">
-                                    <h3>Title of illustration</h3>
-                                    <p>Surfing Algarve in january with super good waves.</p>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="assets/images/Surf.jpeg" alt="Surf Algarve">
-                            <figcaption class="overlay">
-                                <div class="text">
-                                    <h3>Title of illustration</h3>
-                                    <p>Surfing Algarve</p>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="assets/images/Surf.jpeg" alt="Surf Algarve">
-                            <figcaption class="overlay">
-                                <div class="text">
-                                    <h3>Title of illustration</h3>
-                                    <p>Surfing Algarve</p>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="assets/images/Surf.jpeg" alt="Surf Algarve">
-                            <figcaption class="overlay">
-                                <div class="text">
-                                    <h3>Title of illustration</h3>
-                                    <p>Surfing Algarve</p>
-                                </div>
-                            </figcaption>
-                        </figure>
+                      {% set blocks = entry.artblock.all() %}
+                        {% if blocks is not empty %}
+                            
+                            {% for block in blocks %}
+                                <figure>
+                               {% for image in block.image %}
+                                    <img src="{{ image.url }}" alt="{{ image.alt }}" />
+                                {% endfor %}
+                                {% if block.imgTitle is not empty %}
+                                    <figcaption class="overlay">
+                                        <div class="text">
+                                            <h3>{{ block.imgTitle }}</h3>
+                                            <p>{{ block.subtitle }}</p>
+                                        </div>
+                                    </figcaption>
+                                {% endif %}
+                                </figure>
+                                 {% endfor %}
+                           {% endif %} 
                     </div>
             </div>
-
-            <div class="img-block dark-background" id="item2">
-                <h2>Title</h2>
-                <p>Some text about this block</p>
-                    <div class="images">
-                        <figure>
-                            <img src="assets/images/Mountain.jpeg" alt="Hiking">
-                            <figcaption class="overlay">
-                                <div class="text">
-                                    <h3>Hiking Pyrneeen</h3>
-                                    <p>more text</p>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="assets/images/Mountain.jpeg" alt="Hiking">
-                            <figcaption class="overlay">
-                                <div class="text">
-                                    <div class="text">
-                                        <h3>Hiking Pyrneeen</h3>
-                                        <p>more text</p>
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="assets/images/Mountain.jpeg" alt="Hiking">
-                            <figcaption class="overlay">
-                                <div class="text">
-                                    <h3>Hiking Pyrneeen</h3>
-                                    <p>more text</p>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-            </div>
+            {% endfor %}
 {% endblock %}
