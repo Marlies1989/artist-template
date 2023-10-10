@@ -749,27 +749,26 @@
     flex-direction: column;
     align-items: center;
     gap: var(--space-lg);
-  }
-  
-  .img-block p {
-    border-bottom: 1px solid var(--color-secondary);
-    padding-bottom: var(--space-lg);
-  }
-  
-  :is(.light-background) p {
-    border-bottom: 1px solid var(--color-primary);
-    padding-bottom: var(--space-lg)
+    & p {
+      border-bottom: 1px solid var(--color-secondary);
+      padding-bottom: var(--space-lg);
+    }
   }
   
   .light-background {
     background-color: var(--color-secondary);
     margin-top: 2rem;
-  }
-  
-  :is(.light-background) h2,
-  :is(.light-background) p {
-    color: var(--color-primary);
-    padding-block: var(--space-md);
+    & p {
+      color: var(--color-primary);
+      padding-block: var(--space-md);
+      border-bottom: 1px solid var(--color-primary);
+      padding-bottom: var(--space-lg);
+      font-size: var(--step--1);
+    }
+    & h2 {
+      color: var(--color-primary);
+      padding-block: var(--space-md);
+    }
   }
   
   .dark-background {
@@ -835,17 +834,11 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     white-space: nowrap;
-  }
-  
-  .text > p {
-    color: var(--color-primary);
-    font-size: var(--step--1);
-    padding-block: var(--space-md);
-  }
-  
-  :is(.light-background) p {
-    color: var(--color-primary);
-    font-size: var(--step--1);
+    & p {
+      color: var(--color-primary);
+      font-size: var(--step--1);
+      padding-block: var(--space-md);
+    }
   }
   
   :is(.light-background) .text > h3,
@@ -861,19 +854,16 @@
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  footer a {
-    color: var(--color-secondary);
-    text-decoration: underline;
-    padding-inline: 2rem;
-  }
-  
-  footer a:hover {
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-  }
-  
+      & a {
+        color: var(--color-secondary);
+        text-decoration: underline;
+        padding-inline: 2rem;
+      }
+      & a:hover {
+        background-color: var(--color-secondary);
+        color: var(--color-primary);
+      }
+    }
   
   @media screen and (min-width: 768px) {
     .images {
