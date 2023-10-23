@@ -1,4 +1,4 @@
-dateModified: 1697029914
+dateModified: 1697707243
 email:
   fromEmail: marlies@twokings.nl
   fromName: artisttemplate
@@ -20,7 +20,7 @@ meta:
     5aaf74f2-2e29-43ef-9b34-619d2bfebd43: Common # Common
     8b60daa0-1369-4bea-9598-a50ded1b9938: subtitle # subtitle
     8b66fb95-101a-4b01-a23c-5a8a8e8d5b8b: websiteTitle # websiteTitle
-    10b52a70-48ac-46b7-bb76-2cb293f44b7b: artisttemplate # artisttemplate
+    10b52a70-48ac-46b7-bb76-2cb293f44b7b: 'Template for an artist' # Template for an artist
     12e4733b-5fc8-492f-bac7-d248091adcd6: Homepage # Homepage
     37a3b5c5-9fe1-4edf-ac7f-73ad6d56fa05: Contentblock # Contentblock
     40fb6b6a-d092-4d9a-9285-27a794df1ff0: Default # Default
@@ -46,7 +46,7 @@ plugins:
     schemaVersion: 3.2.0
     settings:
       description: 'Template to show art'
-      facebookAppId: ''
+      facebookAppId: Piet
       metaTemplate: ''
       removeAlternateUrls: ''
       robots:
@@ -85,13 +85,14 @@ plugins:
               - template
               - ' - {{ siteName }}'
       titleSuffix: null
-      twitterHandle: ''
+      twitterHandle: Piet
 system:
   edition: solo
   live: true
   name: artisttemplate
+  retryDuration: null
   schemaVersion: 4.5.3.0
-  timeZone: America/Los_Angeles
+  timeZone: Europe/Amsterdam
 users:
   allowPublicRegistration: false
   defaultGroup: null

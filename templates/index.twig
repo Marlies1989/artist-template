@@ -2,6 +2,7 @@
 
 {% block main %}
         <div class="container">
+        <div class="ball"></div>
 
             <div class="title-block">
                 <h1>{{ homepage.websitetitle }}</h1>
@@ -9,6 +10,7 @@
 
             <div class="text-block border-bottom">
                 <p>{{ homepage.websiteinfo }}</p>
+                <p class="secret-info"> not really secret information </p>
             </div>
         </div>
 
@@ -44,4 +46,59 @@
                     </div>
             </div>
             {% endfor %}
+
+    {# gsap animatie #}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.set(".ball", {xPercent: -10, yPercent: -10});
+
+        let xTo = gsap.quickTo(".ball", "x", {duration: 0.6, ease: "power3"}),
+            yTo = gsap.quickTo(".ball", "y", {duration: 0.6, ease: "power3"});
+
+        window.addEventListener("mousemove", e => {
+            xTo(e.clientX);
+            yTo(e.clientY);
+        });
+
+        gsap.from("h1", {
+            duration:2,
+            ease: "power1.inOut",
+            x: -1000,
+            });
+
+        gsap.from(".text-block", {
+            duration:2,
+            ease: "power1.inOut",
+            x: 1000,
+            });
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        ScrollTrigger.batch("figure", {
+            onEnter: batch => {
+                gsap.from(batch, { y: 75, stagger: .5})
+                },
+            onEnterBack: batch => {
+                gsap.from(batch, {y: 75, stagger: .5})
+                },
+            });
+        
+        gsap.utils.toArray("figure").forEach(el => {
+        let items = el.querySelectorAll(".overlay");
+            if (items.length > 0) {
+                let animation = gsap.from(items, {
+                    duration: .5,
+                    ease: "none",
+                    width: "100%"
+                });
+                el.addEventListener("mouseover", () => animation.reverse());
+                el.addEventListener("mouseout", () => animation.play());
+            }
+});
+
+    </script>
+            
 {% endblock %}

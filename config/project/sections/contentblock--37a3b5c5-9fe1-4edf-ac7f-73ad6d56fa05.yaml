@@ -4,7 +4,7 @@ handle: contentblock
 name: Contentblock
 propagationMethod: all
 siteSettings:
-  10b52a70-48ac-46b7-bb76-2cb293f44b7b: # artisttemplate
+  10b52a70-48ac-46b7-bb76-2cb293f44b7b: # Template for an artist
     enabledByDefault: true
     hasUrls: false
     template: null

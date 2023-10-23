@@ -1,8 +1,9 @@
 baseUrl: $PRIMARY_SITE_URL
+enabled: true
 handle: default
 hasUrls: true
-language: en-US
-name: artisttemplate
+language: nl
+name: 'Template for an artist'
 primary: true
 siteGroup: c7103200-09f9-42b1-9234-bda372c121e4 # artisttemplate
 sortOrder: 1
