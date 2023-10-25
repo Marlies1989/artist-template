@@ -831,10 +831,6 @@
     -o-transition: 1s ease;
   }
   
-  /* figure:hover .overlay {
-    width: 100%;
-  } */
-  
   .text {
     position: absolute;
     top: 50%;
