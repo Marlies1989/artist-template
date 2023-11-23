@@ -59,29 +59,30 @@
     <script>
         let circle = document.querySelector(".circle");
 
-        let lightBackground = document.querySelector(".light-background");
-        let darkBackground = document.querySelector(".dark-background"); 
+        let lightBackgrounds = document.querySelectorAll(".light-background");
+        let darkBackgrounds = document.querySelectorAll(".dark-background"); 
 
-            lightBackground.addEventListener('mouseenter', function(){
-                circle.style.border = '2px solid rgba(8, 1, 21)'
+        lightBackgrounds.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                circle.style.border = '2px solid rgba(8, 1, 21)';
             });
-
-            lightBackground.addEventListener('mouseleave', function(){
-                circle.style.border = '2px solid #f8f5eb'
+            item.addEventListener('mouseleave', () => {
+                circle.style.border = '2px solid #f8f5eb';
             });
+        });
 
-
-            darkBackground.addEventListener('mouseenter', function(){
-                circle.style.border = '2px solid #f8f5eb'
+        darkBackgrounds.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                circle.style.border = '2px solid #f8f5eb';
             });
-
-            darkBackground.addEventListener('mouseleave', function(){
-                circle.style.border = '2px solid rgba(8, 1, 21)'
+            item.addEventListener('mouseleave', () => {
+                circle.style.border = '2px solid rgba(8, 1, 21)';
             });
+        });
 
         TweenLite.set(circle, {
-        xPercent: -50,
-        yPercent: -50
+            xPercent: -50,
+            yPercent: -50
         });
 
         window.addEventListener("mousemove", moveCircle);
@@ -127,7 +128,7 @@
                 el.addEventListener("mouseover", () => animation.reverse());
                 el.addEventListener("mouseout", () => animation.play());
             }
-});
+        });
 
     </script>
             
