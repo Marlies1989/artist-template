@@ -491,18 +491,6 @@
     --line-height-multiplier: 1;
     --text-vspace-multiplier: 1;
   
-    /** Font weight */
-  
-    --font-weight-1: 100;
-    --font-weight-2: 200;
-    --font-weight-3: 300;
-    --font-weight-4: 400;
-    --font-weight-5: 500;
-    --font-weight-6: 600;
-    --font-weight-7: 700;
-    --font-weight-8: 800;
-    --font-weight-9: 900;
-  
     /** Font stack */
   
     --regular: "Sunflower";
@@ -553,11 +541,6 @@
     -o-border-radius: 10px;
   }
   
-  ::-webkit-scrollbar-thumb:hover {
-    background: whitesmoke; 
-    border: 1px solid var(--color-primary);
-  }
-  
   html {
     scroll-behavior: smooth;
   }
@@ -573,17 +556,19 @@
     margin-block-end: var(--space-xxxl);
   }
 
-  .ball {
+  .circle {
+    fill: transparent;
     border: 2px solid var(--color-secondary);
     box-shadow: 
-      0 0 20px #ffffff, 
+      0 0 20px #ffffff86, 
       inset 0 0 20px #ffffff;
     border-radius: 50%;
     width: 5vmin;
     height: 5vmin;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    pointer-events: none;
   }
   
   h1 {
@@ -661,30 +646,26 @@
     flex-direction: column;
     padding: 0;
     background-color: var(--color-primary);
-  }
-  
-  .menu > li {
-    margin-inline: var(--space-md);
-    font-family: var(--regular);
-    font-size: var(--step-2);
-    color: var(--color-secondary);
-    list-style: none;
-  }
-  
-  .menu > li > a {
-    color: var(--color-secondary);
-    text-decoration: none;
-    width: 100%;
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--color-secondary);
-  }
-  
-  .menu > li > a:hover {
-    color: var(--color-secondary);
-  }
-  
+    & li {
+      margin-inline: var(--space-md);
+      font-family: var(--regular);
+      font-size: var(--step-2);
+      color: var(--color-secondary);
+      list-style: none;
+      & a {
+        color: var(--color-secondary);
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--color-secondary);
+        & a:hover {
+          color: var(--color-secondary);
+        }
+      }
+    }
+  }  
   
   @media screen and (min-width: 800px) {
     .mobile-open {

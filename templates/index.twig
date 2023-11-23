@@ -2,7 +2,11 @@
 
 {% block main %}
         <div class="container">
-        <div class="ball"></div>
+        <div class="circle">
+            <svg width="40" height="40">
+                <circle cx="20" cy="20" r="20" ></circle>
+            </svg>
+        </div>
 
             <div class="title-block">
                 <h1>{{ homepage.websitetitle }}</h1>
@@ -53,16 +57,42 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <script>
-        gsap.set(".ball", {xPercent: -10, yPercent: -10});
+        let circle = document.querySelector(".circle");
 
-        let xTo = gsap.quickTo(".ball", "x", {duration: 0.6, ease: "power3"}),
-            yTo = gsap.quickTo(".ball", "y", {duration: 0.6, ease: "power3"});
+        let lightBackground = document.querySelector(".light-background");
+        let darkBackground = document.querySelector(".dark-background"); 
 
-        window.addEventListener("mousemove", e => {
-            xTo(e.clientX);
-            yTo(e.clientY);
+            lightBackground.addEventListener('mouseenter', function(){
+                circle.style.border = '2px solid rgba(8, 1, 21)'
+            });
+
+            lightBackground.addEventListener('mouseleave', function(){
+                circle.style.border = '2px solid #f8f5eb'
+            });
+
+
+            darkBackground.addEventListener('mouseenter', function(){
+                circle.style.border = '2px solid #f8f5eb'
+            });
+
+            darkBackground.addEventListener('mouseleave', function(){
+                circle.style.border = '2px solid rgba(8, 1, 21)'
+            });
+
+        TweenLite.set(circle, {
+        xPercent: -50,
+        yPercent: -50
         });
 
+        window.addEventListener("mousemove", moveCircle);
+
+        function moveCircle(e) {
+            TweenLite.to(circle, 0.3, {
+                x: e.clientX,
+                y: e.clientY
+            });
+        }
+        
         gsap.from("h1", {
             duration:2,
             ease: "power1.inOut",
